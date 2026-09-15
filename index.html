@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+    <h1>Coffee!!!</h1>
+    <br>
+    <form>
+        
+        <label for="choose">Choose:</label>
+        <br>
+        <input type="checkbox" id="item1" value=129>
+        <label for="item1">Spanish Latte</label>
+        <br>
+        <input type="checkbox" id="item2" value=199>
+        <label for="item2">Americano</label>
+        <br>
+        <input type="checkbox" id="item3" value=159>
+        <label for="item3">White Mocha Latte</label>
+        <br>
+        <input type="checkbox" id="item1" value=159>
+        <label for="item4">French Vanilla Latte</label>
+        <br><br>
+    
+       <label for="choose">Choose:</label>
+        <br>
+        <input type="radio" id="regular" value=0 name="size">
+        <label for="regular">Regular (+Php 0)</label>
+        <br>
+        <input type="radio" id="upsize" value=30 name="size">
+        <label for="upsize">Upsize (+Php 30)</label>
+        <br><br>
+        
+
+        <label for="choose">Choose:</label>
+        <br>
+        <input type="radio" id="regular" value=0 name="size">
+        <label for="hot">Hot</label>
+        <br>
+        <input type="radio" id="upsize" value=30 name="size">
+        <label for="iced">Iced</label>
+        <br>
+<br>
+<label for="options">Select Extras</label>
+<br>
+<select id="coffee">
+<option value="0">Choose an option</option>
+<option value="99">Salt Cream</option>
+<option value="129">Extra Syrup</option>
+<option value="159">Extra Espresso Shot</option></select>
+
+<button type="button" py-click="show_order">Show Order</button>
+    </form>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    <div id="output4"></div>
+
+<h2>--RECEIPT--</h2>
+
+        <script type="py" src="main.py"></script>
+</form>
+</body>
+</html>
