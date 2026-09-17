@@ -8,24 +8,39 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
 </head>
+<style>
+    .con {
+        border-radius: 10px;
+            background-color: rgb(129, 206, 129);
+            padding: 20px;
+            margin: auto;
+            margin-top: 9%;
+            width: 700px;
+            box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.52)
+    }
+</style>
 <body>
+    <div class="con">
     <h1>Coffee!!!</h1>
     <br>
     <form>
         
         <label for="choose">Choose:</label>
         <br>
-        <input type="checkbox" id="prod1" value=129>
+        <input type="checkbox" id="item1" value=129>
         <label for="item1">Spanish Latte</label>
         <br>
-        <input type="checkbox" id="prod2" value=199>
+        <input type="checkbox" id="item2" value=139>
         <label for="item2">Americano</label>
         <br>
-        <input type="checkbox" id="prod3" value=159>
+        <input type="checkbox" id="item3" value=159>
         <label for="item3">White Mocha Latte</label>
         <br>
-        <input type="checkbox" id="prod4" value=159>
+        <input type="checkbox" id="item4" value=159>
         <label for="item4">French Vanilla Latte</label>
+        <br>
+        <input type="checkbox" id="item5" value=149>
+        <label for="item4">Caramel Macchiato</label>
         <br><br>
     
        <label for="choose">Choose:</label>
@@ -40,10 +55,10 @@
 
         <label for="choose">Choose:</label>
         <br>
-        <input type="checkbox" id="hot" value=0 name="size">
+        <input type="checkbox" id="hot" value=0 name="temp">
         <label for="hot">Hot</label>
         <br>
-        <input type="checkbox" id="iced" value=30 name="size">
+        <input type="checkbox" id="iced" value=30 name="temp">
         <label for="iced">Iced</label>
         <br>
 <br>
@@ -55,7 +70,7 @@
 <option value="10">Extra Syrup</option>
 <option value="40">Extra Espresso Shot</option></select>
 
-<button type="button" py-click="show_order">Show Order</button>
+<button type="button" py-click="place_order">Place Order</button>
     </form>
     <div id="output1"></div>
     <div id="output2"></div>
@@ -63,8 +78,10 @@
     <div id="output4"></div>
 
 <h2>--RECEIPT--</h2>
+<div id="output1"></div>
 
-        <script type="py" src="main.py"></script>
+    <script type="py" src="main.py"></script>
+</div>
 </form>
 </body>
 </html>
